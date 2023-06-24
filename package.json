@@ -1,6 +1,6 @@
 {
   "name": "seventimer-api",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Definitions for the 7timer! API.",
   "author": "Hauke Schulz <hauke27@gmail.com>",
   "license": "MIT",
@@ -12,6 +12,7 @@
     "meteo",
     "astro"
   ],
+  "type": "commonjs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

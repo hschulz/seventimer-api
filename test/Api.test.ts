@@ -1,16 +1,16 @@
 import { expect } from 'chai'
-import { Api } from '..'
+import { Seventimer } from '..'
 
 describe("Seventimer API", () => {
 
     it('should generate a valid url with zero lat / lon', () => {
-        const api = new Api()
+        const api = new Seventimer.Api()
 
         expect(api.getRequestUrl()).to.equal("https://www.7timer.info/bin/api.pl?lat=0.000&lon=0.000&product=civillight&output=json")
     })
 
     it('should set all required parameters', () => {
-        const api = new Api()
+        const api = new Seventimer.Api()
         api.lat = "52.520"
         api.lon = "13.404"
         api.product = "two"
@@ -21,7 +21,7 @@ describe("Seventimer API", () => {
 
     it('should add and remove optional parameters', () => {
 
-        const api = new Api()
+        const api = new Seventimer.Api()
 
         api.ac = "0"
         api.lang = "de"
@@ -40,7 +40,7 @@ describe("Seventimer API", () => {
 
     it('should return default params', () => {
 
-        const api = new Api()
+        const api = new Seventimer.Api()
 
         const params = api.params
 
@@ -52,7 +52,7 @@ describe("Seventimer API", () => {
 
     it('should return set params', () => {
 
-        const api = new Api()
+        const api = new Seventimer.Api()
 
         api.lat = "52.520"
         api.lon = "13.404"
@@ -77,7 +77,7 @@ describe("Seventimer API", () => {
 
     it('should return the api url', () => {
 
-        const api = new Api()
+        const api = new Seventimer.Api()
 
         expect(api.URL).to.equal("https://www.7timer.info/bin/api.pl")
     })
