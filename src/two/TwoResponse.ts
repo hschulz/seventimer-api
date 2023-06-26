@@ -1,5 +1,5 @@
-import { Response } from "../Response"
-import { TwoDataEntry } from "./TwoDataEntry"
+import type { Response } from "../Response"
+import type { TwoDataEntry } from "./TwoDataEntry"
 
 export interface TwoResponse extends Response {
 

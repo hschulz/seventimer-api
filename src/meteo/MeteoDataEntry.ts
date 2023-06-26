@@ -1,4 +1,4 @@
-import { ApiValueUndefinedNumber, CloudCover, WindSpeed } from "../Types"
+import type { ApiValueUndefinedNumber, CloudCover, WindSpeed } from "../Types"
 
 export type ProfileLayer = "950mb" | "900mb" | "850mb" | "800mb" | "750mb"
 | "700mb" | "650mb" | "600mb" | "550mb" | "500mb" | "450mb" | "400mb"

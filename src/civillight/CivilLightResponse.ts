@@ -1,5 +1,5 @@
-import { CivilLightDataEntry } from "./CivilLightDataEntry"
-import { Response } from "../Response"
+import type { CivilLightDataEntry } from "./CivilLightDataEntry"
+import type { Response } from "../Response"
 
 export interface CivilLightResponse extends Response {
 

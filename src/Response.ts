@@ -1,9 +1,9 @@
-import { AstroDataEntry } from "./astro/AstroDataEntry"
-import { CivilDataEntry } from "./civil/CivilDataEntry"
-import { CivilLightDataEntry } from "./civillight/CivilLightDataEntry"
-import { MeteoDataEntry } from "./meteo/MeteoDataEntry"
-import { Product } from "./Types"
-import { TwoDataEntry } from "./two/TwoDataEntry"
+import type { AstroDataEntry } from "./astro/AstroDataEntry"
+import type { CivilDataEntry } from "./civil/CivilDataEntry"
+import type { CivilLightDataEntry } from "./civillight/CivilLightDataEntry"
+import type { MeteoDataEntry } from "./meteo/MeteoDataEntry"
+import type { Product } from "./Types"
+import type { TwoDataEntry } from "./two/TwoDataEntry"
 
 export interface Response {
 

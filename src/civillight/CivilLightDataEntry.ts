@@ -1,4 +1,4 @@
-import { DetailedWeatherNames } from "../civil/CivilDataEntry"
+import type { DetailedWeatherNames } from "../civil/CivilDataEntry"
 
 export interface CivilLightDataEntry {
 

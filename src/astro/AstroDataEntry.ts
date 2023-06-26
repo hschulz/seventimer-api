@@ -1,5 +1,5 @@
-import { CloudCover, LiftedIndex, WindSpeed } from "../Types"
-import { WindDirection } from "../civil/CivilDataEntry"
+import type { CloudCover, LiftedIndex, WindSpeed } from "../Types"
+import type { WindDirection } from "../civil/CivilDataEntry"
 
 export interface AstroDataEntry {
 

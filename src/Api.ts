@@ -1,4 +1,4 @@
-import { Product, RequestParams } from "./Types"
+import type { Product, RequestParams } from "./Types"
 
 /**
  * The API class.

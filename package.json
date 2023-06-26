@@ -1,6 +1,6 @@
 {
   "name": "seventimer-api",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Definitions for the 7timer! API.",
   "author": "Hauke Schulz <hauke27@gmail.com>",
   "license": "MIT",
@@ -12,16 +12,20 @@
     "meteo",
     "astro"
   ],
-  "type": "commonjs",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    "import": "./esm/index.js"
+  },
+  "main": "esm/index.js",
+  "types": "esm/index.d.ts",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "nyc mocha",
     "mocha": "mocha --reporter=spec",
-    "build": "tsc"
-  },
+    "build": "npm run build:esm",
+    "build:esm": "tsc --module esnext --outDir esm/"
+},
   "dependencies": {
     "typescript": "^5.1.3"
   },

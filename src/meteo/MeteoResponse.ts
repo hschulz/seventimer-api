@@ -1,5 +1,5 @@
-import { MeteoDataEntry } from "./MeteoDataEntry"
-import { Response } from "../Response"
+import type { MeteoDataEntry } from "./MeteoDataEntry"
+import type { Response } from "../Response"
 
 export interface MeteoResponse extends Response {
 

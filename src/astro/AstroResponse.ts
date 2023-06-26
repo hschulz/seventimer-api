@@ -1,5 +1,5 @@
-import { AstroDataEntry } from "./AstroDataEntry"
-import { Response } from "../Response"
+import type { AstroDataEntry } from "./AstroDataEntry"
+import type { Response } from "../Response"
 
 export interface AstroResponse extends Response {
 

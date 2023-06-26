@@ -7,3 +7,9 @@ extension:
 reqursive: true
 
 reporter: "mocha-junit-reporter"
+
+node-option: [
+  "experimental-specifier-resolution=node",
+  "loader=ts-node/esm",
+  "no-warnings"
+]
