@@ -14,7 +14,8 @@
   ],
   "type": "module",
   "exports": {
-    "import": "./esm/index.js"
+    "import": "./esm/index.js",
+    "require": "./cjs/index.js"
   },
   "main": "esm/index.js",
   "types": "esm/index.d.ts",
@@ -23,8 +24,9 @@
     "lint:fix": "eslint . --fix",
     "test": "nyc mocha",
     "mocha": "mocha --reporter=spec",
-    "build": "npm run build:esm",
-    "build:esm": "tsc --module esnext --outDir esm/"
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc --module esnext --outDir esm/",
+    "build:cjs": "tsc --module commonjs --target esnext --outDir cjs/"
 },
   "dependencies": {
     "typescript": "^5.1.3"

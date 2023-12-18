@@ -1,8 +1,19 @@
-export * from './astro'
-export * from './civil'
-export * from './civillight'
-export * from './meteo'
-export * from './two'
-export * from './Api'
-export * from './Response'
-export * from './Types'
+import * as Astro from './astro'
+import * as Civil from './civil'
+import * as CivilLight from './civillight'
+import * as Meteo from './meteo'
+import * as Two from './two'
+import * as Api from './Api'
+import * as Response from './Response'
+import * as Types from './Types'
+
+export {
+    Astro,
+    Civil,
+    CivilLight,
+    Meteo,
+    Two,
+    Api,
+    Response,
+    Types
+}
